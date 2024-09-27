@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.2.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Cardicia</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a> <!-- Updated link to the section id -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+  
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Cardicia Masemola</h1>
+            <h3>Website and software developer</h3>
+            <p>What's life without Tech</p>
+        </div>
+        <div class="home-picture">
+            <img src="Me.jpg" alt="Cardicia Masemola">
+        </div>
+    </section>
+    
+    <section class="btn-section">
+        <div class="btn-box">
+            <a href="projects.html" class="btn">Hire Me</a>
+            <a href="#contact" class="btn">Let's Talk</a>
+        </div>
+        
+        <!-- New section for "Apps I Have Used" -->
+        <h3 class="apps-header">Apps I Have Used</h3>
+        <div class="apps-used">
+            <img src="Vs_Code.jpg" alt="App 1" class="app-icon">
+            <img src="SQL.jpg" alt="App 2" class="app-icon">
+            <img src="VS.jpg" alt="App 3" class="app-icon">
+            <img src="Azure.jpg" alt="App 4" class="app-icon">
+            <img src="Netbeans.png" alt="App 5" class="app-icon">
+        </div>
+    
+        <p>Currently completing my final year at Rosebank College</p>
+    </section>
+    
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-left">
+                <img src="Gamer.jpeg" alt="Tech room">
+            </div>
+            <div class="about-right">
+                <h3>Overview</h3>
+                <p>Cardicia Masemola is a hardworking and dedicated person who can work well 
+                    under pressure and adapt easily to any situation. She is outspoken and 
+                    has effective communication skills and computer literacy. She believes in 
+                    persistency and consistency. Cardicia is a self-motivated, goal-oriented, 
+                    driven individual who believes in lifting and empowering others 
+                    while being open to learning from others too.</p>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2 class="heading">My Skills</h2>
+        <div class="skills-content">
+            <div class="skills-left">
+                <div class="skill-bar">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <h3>C#</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <h3>SQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <h3>DevOps</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-right">
+                <p>Computer Literacy</p>
+                <p>Sales Skills</p>
+                <p>Time Management</p>
+                <p>Microsoft Office Skill</p>
+                <p>Teamwork</p>
+                <p>Problem Solving</p>
+                <p>Communication</p>
+                <p>Adaptive (Fast learner)</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="project">
+        <h2>My Projects</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="slide">
+                    <img src="Bookstore_photo.jpeg" alt="Project 1">
+                </div>
+                <div class="slide">
+                    <img src="coffee2.jpg" alt="Project 2">
+                </div>
+                <div class="slide">
+                    <img src="RecipeApp.jpeg" alt="Project 3">
+                </div>
+                <div class="slide">
+                    <img src="Marks.jpeg" alt="Project 4">
+                </div>
+                <div class="slide">
+                    <img src="DevOps.png" alt="Project 5">
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <a href="projects.html">
+            <button id="viewProjectsBtn">View Projects</button>
+        </a>
+    </section>
+
+    <section class="contact-section" id="contact">
+        
+        <h1 class="contact-header">Contact Details</h1>
+        <h2 class="Cell-p">Cellphone number : 0603716208</h2>
+
+        <div class="contact-images">
+            <a href="https://www.linkedin.com/in/mosete-cardicia-masemola-871850323" target="_blank">
+                <img src="icons8-linkedin-48.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Cardicia101/my-projects.git" target="_blank">
+                <img src="icons8-github-64.png" alt="GitHub">
+            </a>
+            <a href="mailto:keishamasemola@gmail.com">
+                <img src="icons8-gmail-48.png" alt="Gmail">
+            </a>
+        </div>
+                <div>
+                    <p class="Last-p">Click on these icons above inorder to get in touch with me</p>
+           
+        </div>
+        
+    </section>
+
+    <footer class="special-footer">
+        <p class="footer-p">&copy; Life is always better in Tech - Cardicia Masemola/p>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
+

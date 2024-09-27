@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background-color: pink;
+    --second-background-color: lightskyblue;
+    --text_color: white;
+    --main-color: lightpink;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text_color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text_color);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text_color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    padding-bottom: 20px; /* Adds space below the navigation bar */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text_color);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5%;
+    border: 2px solid white; /* Adds a white border around h1, p, and picture */
+    padding: 2rem; /* Adds padding inside the border */
+    background-color: var(--background-color); /* Ensures the background color stays consistent */
+    border-radius: 10px; /* Optional: Slightly rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for better visibility */
+}
+
+.home-content h1,
+.home-content p {
+    margin-bottom: 1rem;
+}
+
+.home-picture {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0; /* Space around the picture */
+}
+
+.home-picture img {
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--main-color); /* Border around the picture */
+    border-radius: 10px; /* Optional: Slightly rounded corners */
+}
+.btn-section {
+    display: flex;
+    flex-direction: column; /* Stack buttons and icons vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 0.5rem 5%;; /* Reduced padding to make the section smaller */
+    background-color: var(--background-color); /* Ensure the background color stays consistent */
+    position: relative; /* Position home-sci within the section */
+    height: fit-content;
+}
+.btn-section p {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+
+.btn-box {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+    margin-bottom: 1rem; /* Space between buttons and icons */
+}
+
+.btn-box .btn {
+    width: 15rem;
+    height: 4rem; /* Adjust height as needed */
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text_color);
+    text-align: center;
+    line-height: 4rem; /* Align text vertically */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-box .btn:hover{
+    color: var(--main-color);
+    transition: 2s;
+}
+.apps-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text_color);
+    text-align: center;
+    margin-top: 2rem; /* Adds space above the header */
+    margin-bottom: 1rem; /* Adds space below the header */
+}
+
+.apps-used {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between the app icons */
+    margin-top: 1rem; /* Adds space above the app icons */
+    flex-wrap: wrap; /* Allows the images to wrap if needed */
+}
+
+.app-icon {
+    width: 130px; /* Adjust size of the app icons */
+    height: 130px; /* Keep a consistent height */
+    border-radius: 10px; /* Optional: Slightly rounded corners */
+    transition: transform 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+.app-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+
+
+.home-content  h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+ 
+.home-content h3 {
+    font-size: 6rem;  /* Increased font size */
+    font-weight: 500; /* Increased font weight to make it bold */
+    margin-bottom: 1rem;
+}
+
+.home-content  p {
+    font-size: 4rem; /* Reduced font size */
+    font-weight: 250;
+    margin: 2.5rem 0;
+}
+
+
+.home-sci {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    margin-top: 2rem; /* Adjust margin to space icons appropriately */
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 40px; /* Align text vertically */
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    }
+    span{
+    color: var(--main-color);
+    }
+
+
+
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        background: var(--second-background-color);
+        padding-bottom: 6rem;
+    }
+    
+    .about-content {
+        display: flex;
+        flex-direction: row; /* Create two columns */
+        gap: 2rem; /* Space between the columns */
+        width: 100%; /* Adjust width as needed */
+        align-items: center;
+    }
+    
+    .about-left {
+        flex: 1;
+    }
+    
+    .about-left img {
+        width: 100%; /* Ensure the image fits the column */
+        height: auto;
+        border-radius: 40px; /* Optional: Add rounded corners */
+        
+    }
+    
+    .about-right {
+        flex: 2;
+        text-align: left;
+    }
+    
+    .about-right h3 {
+        font-size: 5rem;
+        font-weight: 100;
+    }
+    
+    .about-right p {
+        font-size: 3rem;
+        font-weight: 50; /* Adjusted font size for readability */
+        margin: 2rem 0;
+    }
+    
+   
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        background: var(--main-color);
+        padding-bottom: 6rem;
+    }
+    
+    .skills-content {
+        display: flex;
+        flex-direction: row; /* Create two columns */
+        gap: 2rem; /* Space between the columns */
+        width: 80%; /* Adjust width as needed */
+        align-items: flex-start;
+    }
+    
+    .skills-left {
+        flex: 1;
+    }
+    
+    .skill-bar {
+        margin-bottom: 2rem;
+        
+    }
+    
+    .skill-bar h3 {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+   
+    
+    
+    .progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .progress {
+        height: 1.5rem;
+        background-color: var(--main-color);
+        border-radius: 10px;
+    }
+    
+    .skills-right {
+        flex: 1;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        background: var(--main-color);
+        padding-bottom: 6rem;
+    }
+    
+    .skills-content {
+        display: flex;
+        flex-direction: row; /* Two columns */
+        gap: 2rem; /* Space between the columns */
+        width: 80%; /* Adjust width */
+        align-items: flex-start;
+    }
+    
+    .skills-left, .skills-right {
+        flex: 1;
+    }
+    
+    .skill-bar {
+        margin-bottom: 1rem; /* Adjust margin between skills */
+    }
+    
+    .skill-bar h3 {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+    
+    .progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .progress {
+        height: 1.5rem;
+        background-color: var(--second-background-color); /* Change color for better contrast */
+        border-radius: 10px;
+    }
+    
+    .skills-right p {
+        font-size: 1.8rem;
+        text-align: right;
+        line-height: 2.5rem; /* Improve readability */
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #home {
+        height: 100vh;
+        background-color: var(--background-color);
+        /* Add any other styles for the home section */
+    }
+    
+    #project {
+        padding: 20px;
+        background-color: var(--second-background-color); /* Light gray background for contrast */
+        position: relative; /* Ensure the button can be positioned within this section */
+    }
+   
+    
+    .slider-container {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 20px auto;
+        width: 80%; /* Adjust width as needed */
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease; /* Smooth transition */
+    }
+    
+    .slide {
+        min-width: 100%; /* Each slide takes up full container width */
+        box-sizing: border-box;
+    }
+    
+    .slide img {
+        width: 80vh;
+        height: 80vh; /* Maintain aspect ratio */
+        border-radius: 30px;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    #viewProjectsBtn {
+        display: block; /* Ensure it is visible */
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #f06292;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #viewProjectsBtn:hover {
+        background-color: #d81b60;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Header Styles */
+    .header {
+        background-color: var(--background-color);
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar a {
+        color:var(--text_color);
+        text-decoration: none;
+        margin: 0 1rem;
+    }
+    
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    /* Project Section Styles */
+    .page-header {
+        background-color: var(--background-color);
+        color: #fff;
+        padding: 1rem;
+        text-align: center; /* Center the text */
+    
+    }
+    
+    .special-section {
+        padding: 2rem;
+        margin: 1rem;
+        border: 1px solid var(--background-color);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .special-section:nth-of-type(odd) {
+        background-color: var();
+    }
+    
+    .special-section:nth-of-type(even) {
+        background-color: #e2e2e2;
+    }
+    
+    .page-title {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: var(--second-background-color);
+        text-align: center; /* Center the text */
+        font-weight: bold; /* Make the text bold */
+    }
+    
+    .Contend2project {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .Specialimage {
+        flex: 1;
+    }
+    
+    .Specialimage img {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 50px;
+    }
+    
+    .special-description {
+        flex: 2;
+    }
+    
+    .special-description p {
+        margin-bottom: 1rem;
+        font-size: medium;
+        font-weight: bold;
+    }
+    
+    .download-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: var(--second-background-color);
+        color: var(--text_color);
+        text-decoration: none;
+        border-radius: 4px;
+    }
+    
+    .download-button:hover {
+        background-color: var(--main-color);
+    }
+    
+    /* Invisible Navigation Bar Styles */
+.invisible-nav {
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+}
+
+.invisible-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.invisible-li {
+    margin: 0 1rem;
+}
+
+.invisible-ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.invisible-ul li a:hover {
+    text-decoration: underline;
+}
+special-footer{
+    background-color: var(--background-color);
+}
+footer-p{
+    font-weight: bold;
+    color: var(--text_color);
+    justify-content: center;
+    font-size: medium;
+}
+
+.contact-section {
+    text-align: center;
+    background-color: var(--background-color);
+    color: white;
+}
+
+.contact-header {
+    font-weight: bold;
+    margin-bottom: 60px;
+    font-size: x-large;
+    
+}
+
+.contact-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+.contact-images img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-images img:hover {
+    transform: scale(1.1); /* Slightly increase icon size on hover */
+}
+.Cell-p {
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 100px;
+}
+.Last-p{
+    color: white;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
